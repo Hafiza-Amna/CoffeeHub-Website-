@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart | Coffee HUB</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <nav class="navbar">
+  <div class="logo">☕ Coffee HUB</div>
+
+  <div class="menu-toggle" id="menuToggle">☰</div>
+
+  <ul id="navLinks">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="process.html">Process</a></li>
+    <li><a href="cart.html">Cart 🛒 <span id="cart-count">0</span></a></li>
+  </ul>
+  <button id="theme-toggle" class="theme-btn">🌙</button>
+</nav>
+
+
+<h1 class="page-title">Your Shopping Cart</h1>
+
+<div class="cart-container">
+    <div id="cart-items" class="cart-items-grid"></div>
+    
+    <div class="cart-summary">
+        <div class="summary-details">
+            <h3>Order Summary</h3>
+            <p id="total" class="total-price">Total: $0.00</p>
+            <p class="delivery-note">Free delivery on orders over $10</p>
+        </div>
+        <a href="checkout.html" class="cta-btn checkout-btn">Proceed to Checkout</a>
+    </div>
+</div>
+
+<script src="css/js/cart.js"></script>
+<script src="css/js/script.js"></script>
+</body>
+</html>

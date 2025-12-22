@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout | Coffee HUB</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<h1>Checkout</h1>
+<nav class="navbar">
+  <div class="logo">☕ Coffee HUB</div>
+
+  <div class="menu-toggle" id="menuToggle">☰</div>
+
+  <ul id="navLinks">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="process.html">Process</a></li>
+    <li><a href="cart.html">Cart 🛒</a></li>
+  </ul>
+  <button id="theme-toggle" class="theme-btn">🌙</button>
+</nav>
+
+
+<h1>Checkout</h1>
+<div class="checkout-container fade-in">
+    <div class="order-summary">
+        <h2>Order Summary</h2>
+        <div id="checkout-items"></div>
+        <div class="total-amount">
+            <strong id="checkout-total">Total: $0.00</strong>
+        </div>
+    </div>
+    
+    <form id="orderForm" class="checkout-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="address" placeholder="Address" required>
+        <button type="submit" class="cta-btn">Place Order</button>
+    </form>
+</div>
+
+<p id="success">🎉 Order Placed Successfully!</p>
+
+<script src="css/js/checkout.js"></script>
+<script src="css/js/script.js"></script>
+
+</body>
+</html>

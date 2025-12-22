@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Process | Coffee HUB</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">☕ Coffee HUB</div>
+        <div class="menu-toggle" id="menuToggle">☰</div>
+        <ul id="navLinks">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="process.html">Process</a></li>
+            <li><a href="cart.html">Cart 🛒</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-btn">🌙</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="process-hero">
+        <div class="hero-content">
+            <h1 class="reveal-text">The Art of Coffee Making</h1>
+            <p class="hero-subtitle">From bean to cup, every step crafted with passion and precision</p>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-elements">
+                <div class="bean bean1">☕</div>
+                <div class="bean bean2">🌱</div>
+                <div class="bean bean3">🔥</div>
+                <div class="steam steam1"></div>
+                <div class="steam steam2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Timeline -->
+    <section class="process-timeline">
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
+
+            <!-- Step 1: Bean Selection -->
+            <div class="process-card step-1 active" data-step="1">
+                <div class="step-number">01</div>
+                <div class="step-content">
+                    <div class="step-icon">🌱</div>
+                    <h3>Premium Bean Selection</h3>
+                    <p>We carefully select the finest Arabica beans from sustainable farms around the world. Each bean is hand-picked and graded for optimal quality.</p>
+                    <div class="step-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Origin:</span>
+                            <span class="detail-value">Ethiopia, Colombia, Brazil</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Altitude:</span>
+                            <span class="detail-value">1,200-2,200m</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Grade:</span>
+                            <span class="detail-value">Specialty Grade</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-visual">
+                    <div class="bean-display">
+                        <div class="bean-circle"></div>
+                        <div class="bean-circle"></div>
+                        <div class="bean-circle"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2: Roasting -->
+            <div class="process-card step-2" data-step="2">
+                <div class="step-number">02</div>
+                <div class="step-content">
+                    <div class="step-icon">🔥</div>
+                    <h3>Artisan Roasting</h3>
+                    <p>Our master roasters use traditional methods combined with modern precision. Each batch is roasted to perfection, developing complex flavors and aromas.</p>
+                    <div class="step-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Temperature:</span>
+                            <span class="detail-value">180°C - 240°C</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Duration:</span>
+                            <span class="detail-value">12-18 minutes</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Method:</span>
+                            <span class="detail-value">Drum Roasting</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-visual">
+                    <div class="roasting-animation">
+                        <div class="cup-body">
+                            <div class="cup-handle"></div>
+                            <div class="coffee-liquid"></div>
+                        </div>
+                        <div class="steam-particles">
+                            <div class="steam steam1"></div>
+                            <div class="steam steam2"></div>
+                            <div class="steam steam3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3: Grinding -->
+            <div class="process-card step-3" data-step="3">
+                <div class="step-number">03</div>
+                <div class="step-content">
+                    <div class="step-icon">⚙️</div>
+                    <h3>Fresh Grinding</h3>
+                    <p>Beans are ground fresh for each order using burr grinders that preserve the coffee's essential oils and ensure consistent particle size.</p>
+                    <div class="step-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Grinder:</span>
+                            <span class="detail-value">Burr Grinder</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Timing:</span>
+                            <span class="detail-value">Order by Order</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Size:</span>
+                            <span class="detail-value">Medium-Fine</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-visual">
+                    <div class="grinding-animation">
+                        <div class="grinder-wheel"></div>
+                        <div class="grounds-pile"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4: Brewing -->
+            <div class="process-card step-4" data-step="4">
+                <div class="step-number">04</div>
+                <div class="step-content">
+                    <div class="step-icon">☕</div>
+                    <h3>Perfect Brewing</h3>
+                    <p>Hot water is poured over freshly ground coffee at the ideal temperature and timing. This extraction process brings out the coffee's full flavor profile.</p>
+                    <div class="step-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Water Temp:</span>
+                            <span class="detail-value">92°C - 96°C</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Ratio:</span>
+                            <span class="detail-value">1:16 (Coffee:Water)</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Time:</span>
+                            <span class="detail-value">4-5 minutes</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-visual">
+                    <div class="brewing-animation">
+                        <div class="coffee-stream"></div>
+                        <div class="cup-fill"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 5: Serving -->
+            <div class="process-card step-5" data-step="5">
+                <div class="step-number">05</div>
+                <div class="step-content">
+                    <div class="step-icon">🎉</div>
+                    <h3>Artful Serving</h3>
+                    <p>Your coffee is served immediately in our signature cups. Each drink is a masterpiece, crafted with care and served with a smile.</p>
+                    <div class="step-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Temperature:</span>
+                            <span class="detail-value">60°C - 70°C</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Timing:</span>
+                            <span class="detail-value">Fresh & Hot</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Quality:</span>
+                            <span class="detail-value">Premium</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-visual">
+                    <div class="serving-animation">
+                        <div class="final-cup"></div>
+                        <div class="steam-rising"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Promise -->
+    <section class="quality-section">
+        <div class="quality-content">
+            <h2>Our Quality Promise</h2>
+            <div class="quality-grid">
+                <div class="quality-item">
+                    <div class="quality-icon">⏰</div>
+                    <h4>Freshness</h4>
+                    <p>Roasted within 48 hours of your order</p>
+                </div>
+                <div class="quality-item">
+                    <div class="quality-icon">🌍</div>
+                    <h4>Sustainability</h4>
+                    <p>Ethically sourced from certified farms</p>
+                </div>
+                <div class="quality-item">
+                    <div class="quality-icon">👨‍🍳</div>
+                    <h4>Expertise</h4>
+                    <p>Crafted by certified coffee professionals</p>
+                </div>
+                <div class="quality-item">
+                    <div class="quality-icon">❤️</div>
+                    <h4>Passion</h4>
+                    <p>Made with love for coffee enthusiasts</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="css/js/animations.js"></script>
+    <script src="css/js/script.js"></script>
+</body>
+</html>
