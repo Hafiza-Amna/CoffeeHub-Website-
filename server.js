@@ -11,7 +11,7 @@ const app = express();
 // Middleware
 app.use(cors());
 app.use(express.json());
-app.use(express.static('../Frontened'));
+app.use(express.static('.'));
 
 // Routes
 app.use("/api/menu", menuRoutes);
@@ -73,19 +73,19 @@ app.post("/api/orders", (req, res) => {
 });
 
 // MongoDB Connection (try to connect, but don't fail if not available)
-mongoose.connect("mongodb://127.0.0.1:27017/coffeeHub")
-.then(() => {
-    console.log("✅ MongoDB connected - using database storage");
-    // If MongoDB connects, clear the file-based orders and use database
-    orders = [];
-    saveOrders();
-})
-.catch(err => {
-    console.log("⚠️  MongoDB not available - using file-based storage");
-    console.log("To use MongoDB: Install and start MongoDB, then restart the server");
-});
+// mongoose.connect("mongodb://127.0.0.1:27017/coffeeHub")
+// .then(() => {
+//     console.log("✅ MongoDB connected - using database storage");
+//     // If MongoDB connects, clear the file-based orders and use database
+//     orders = [];
+//     saveOrders();
+// })
+// .catch(err => {
+//     console.log("⚠️  MongoDB not available - using file-based storage");
+//     console.log("To use MongoDB: Install and start MongoDB, then restart the server");
+// });
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
     console.log(`🚀 Server running on port ${PORT}`);
     console.log(`📊 Admin panel: http://localhost:${PORT}/admin.html`);

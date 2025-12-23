@@ -42,6 +42,11 @@ function loadCheckout() {
     checkoutTotal.textContent = `Total: $${total.toFixed(2)}`;
 }
 
+// API configuration
+const API_BASE_URL = window.location.hostname === 'localhost' 
+    ? 'http://localhost:5000' 
+    : 'https://your-backend-url.herokuapp.com'; // Replace with your deployed backend URL
+
 async function submitOrder(e) {
     e.preventDefault();
 
@@ -69,7 +74,7 @@ async function submitOrder(e) {
     try {
         console.log('Sending order:', { items, total, customerName, email, address });
 
-        const res = await fetch("http://localhost:5000/api/orders", {
+        const res = await fetch(`${API_BASE_URL}/api/orders`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ items, total, customerName, email, address })

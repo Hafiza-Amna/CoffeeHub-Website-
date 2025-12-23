@@ -224,6 +224,11 @@
 
     <script src="css/js/script.js"></script>
     <script>
+        // API configuration
+        const API_BASE_URL = window.location.hostname === 'localhost' 
+            ? 'http://localhost:5000' 
+            : 'https://your-backend-url.herokuapp.com'; // Replace with your deployed backend URL
+
         async function loadOrders() {
             const ordersContainer = document.getElementById('orders');
             const statsContainer = document.getElementById('stats');
@@ -231,7 +236,7 @@
             ordersContainer.innerHTML = '<div class="loading">Loading orders...</div>';
 
             try {
-                const response = await fetch('http://localhost:5000/api/orders');
+                const response = await fetch(`${API_BASE_URL}/api/orders`);
                 const orders = await response.json();
 
                 if (orders.length === 0) {
