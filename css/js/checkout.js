@@ -45,7 +45,7 @@ function loadCheckout() {
 // API configuration
 const API_BASE_URL = window.location.hostname === 'localhost' 
     ? 'http://localhost:5000' 
-    : 'https://your-backend-url.herokuapp.com'; // Replace with your deployed backend URL
+    : 'https://coffee-hub-website-tazh.vercel.app';
 
 async function submitOrder(e) {
     e.preventDefault();
